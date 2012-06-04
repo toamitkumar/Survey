@@ -33,6 +33,8 @@ class SurveyViewController1 < UITableViewController
   end
 
   def goToHome(sender)
+  	NSLog("Pushing the log to the logfile")
+  	NSLog(sender.inspect)
   	self.navigationController.popViewControllerAnimated(true)
   end
 

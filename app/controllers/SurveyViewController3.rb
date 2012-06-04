@@ -30,6 +30,28 @@ class SurveyViewController3 < UITableViewController
 		Survey.instance.answers[:q3][2] = sender.selectedSegmentIndex
 	end
 
+	def actionEmailComposer(sender)
+		if(MFMailComposeViewController.canSendMail)
+			@mail_view_controller = MFMailComposeViewController.alloc.init
+			@mail_view_controller.mailComposeDelegate = self;
+			@mail_view_controller.setSubject("Sharing results of Survey")
+			@mail_view_controller.setMessageBody("The body of the email", isHTML:false)
+			self.presentModalViewController(@mail_view_controller, animated:true)
+			# @mail_view_controller.release
+		end
+	end
+
+	def mailComposeController(didFinishWithResult:result, error)
+		case result
+		when MFMailComposeResultCancelled
+		when MFMailComposeResultSent
+		when MFMailComposeResultFailed
+		when MFMailComposeResultSaved
+		else
+		end
+		controller.dismissViewControllerAnimated(true, completion:nil)
+	end
+
 	protected
 	def updateSegmentValue(sender, index)
 		sender.selectedSegmentIndex = (index || 0)

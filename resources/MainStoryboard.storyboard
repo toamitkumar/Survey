@@ -310,11 +310,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzL-Ag-Fqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="C8R-Zw-W0Y" customClass="SurveyViewController3" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="a0J-C1-lVL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="100" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pac-vE-Uvs">
-                            <rect key="frame" x="0.0" y="267" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="267" width="100" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="FINISH">
@@ -324,6 +324,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="actionEmailComposer:" destination="C8R-Zw-W0Y" eventType="touchUpInside" id="kwC-fv-RxP"/>
+                            </connections>
                         </button>
                         <sections>
                             <tableViewSection headerTitle="Please rank (1-3) the following order of interest:" id="OhO-e2-ET9">
@@ -476,6 +479,7 @@
         <class className="SurveyViewController3" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SurveyViewController3.h"/>
             <relationships>
+                <relationship kind="action" name="actionEmailComposer:"/>
                 <relationship kind="action" name="segmentCtrl1Changed:"/>
                 <relationship kind="action" name="segmentCtrl2Changed:"/>
                 <relationship kind="action" name="segmentCtrl3Changed:"/>

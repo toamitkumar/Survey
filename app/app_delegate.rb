@@ -1,6 +1,7 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
   	Survey.instance
+    $stdout.puts "#{App.name} (#{documents_path})"
     true
   end
 
