@@ -26,11 +26,11 @@ For deatils of JSON look at ``resources\questions.json`` for reference.
 
 The screenshot of current implementation:
 
-![The landing page](https://github.com/toamitkumar/Survey/blob/master/docs/Landing.png)
+<img src="https://github.com/toamitkumar/Survey/blob/master/docs/Landing.png" />
 
 * Other pages:
 
-[Other page]: https://github.com/toamitkumar/Survey/blob/master/docs/CheckBox.png
+![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/CheckBox.png)
 
 ![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Segment.png)
 
