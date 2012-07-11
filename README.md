@@ -30,7 +30,7 @@ The screenshot of current implementation:
 
 * Other pages:
 
-![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/CheckBox.png)
+![Other page](https://github.com/toamitkumar/Survey/raw/master/docs/CheckBox.png)
 
 ![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Segment.png)
 
