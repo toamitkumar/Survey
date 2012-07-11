@@ -26,7 +26,7 @@ For deatils of JSON look at ``resources\questions.json`` for reference.
 
 The screenshot of current implementation:
 
-<img src="https://github.com/toamitkumar/Survey/blob/master/docs/Landing.png" />
+<img src="docs/Landing.png" />
 
 * Other pages:
 
