@@ -26,17 +26,17 @@ For deatils of JSON look at ``resources\questions.json`` for reference.
 
 The screenshot of current implementation:
 
-<img src="/docs/Landing.png" />
+![The landing page](https://github.com/toamitkumar/Survey/raw/master/docs/Landing.png)
 
 * Other pages:
 
 ![Other page](https://github.com/toamitkumar/Survey/raw/master/docs/CheckBox.png)
 
-![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Segment.png)
+![Other page](https://github.com/toamitkumar/Survey/raw/master/docs/Segment.png)
 
-![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Slider.png)
+![Other page](https://github.com/toamitkumar/Survey/raw/master/docs/Slider.png)
 
-![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/UI_Picker.png)
+![Other page](https://github.com/toamitkumar/Survey/raw/master/docs/UI_Picker.png)
 
 ## Forking
 
