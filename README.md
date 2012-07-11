@@ -4,7 +4,21 @@ Create your Surveys on iOS dynamically without the need to Compile and Push to a
 The views are controlled by JSON. The sample json:
 
 ```ruby
-
+{
+	"1": {
+		"q": "The Question",
+		"key": "Will be used to store answers"
+		"type": "check|slider|ui_picker|control|text"
+		"op": [
+			{
+				"key": "Key for option",
+				"value": "Value for option"
+			}
+			.....
+		]
+	}
+	....
+}
 
 ```
 
@@ -12,17 +26,17 @@ For deatils of JSON look at ``resources\questions.json`` for reference.
 
 The screenshot of current implementation:
 
-![The landing page](docs/Landing.png)
+![The landing page](https://github.com/toamitkumar/Survey/blob/master/docs/Landing.png)
 
 * Other pages:
 
-![Other page](docs/CheckBox.png)
+![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/CheckBox.png)
 
-![Other page](docs/Segment.png)
+![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Segment.png)
 
-![Other page](docs/Slider.png)
+![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/Slider.png)
 
-![Other page](docs/UI_Picker.png)
+![Other page](https://github.com/toamitkumar/Survey/blob/master/docs/UI_Picker.png)
 
 ## Forking
 
