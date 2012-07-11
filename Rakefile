@@ -9,7 +9,7 @@ Motion::Project::App.setup do |app|
 
   app.files.unshift(Dir.glob("./lib/**/*.rb"))
 
-  app.info_plist['UIMainStoryboardFile'] = 'MainStoryboard'
+  # app.info_plist['UIMainStoryboardFile'] = 'MainStoryboard'
 
   app.icons << "Survey_Icon_WEB.png"
 

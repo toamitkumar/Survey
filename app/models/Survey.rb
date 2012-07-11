@@ -9,6 +9,8 @@ class Survey
 	private
 	def initialize(answers={})
 		@questions = load_questions
+		NSLog("===================")
+		puts @questions.inspect
 		@answers = {}
 		@answers.merge!(answers)
 	end

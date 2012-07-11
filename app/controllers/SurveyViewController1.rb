@@ -1,12 +1,25 @@
 class SurveyViewController1 < UITableViewController
 	include Extensions
 
-	attr_accessor :selected_index
+	attr_accessor :selected_index, :options
 
 	def viewDidLoad
 		super
+    NSLog("-------------------------------------------")
+    @options = Survey.instance.questions["1"]
+    puts @options.inspect
 		# changeNavigationBarBackButtonText
 	end
+
+	def tableView(tableView, numberOfRowsInSection:secton)
+    @options.size
+  end
+
+  def tableView(tableView, cellForRowAtIndexPath:indexPath)
+  	cell = tableView.dequeueReusableCellWithIdentifier("radioCell")    
+    cell.nameLabel.text = @options[indexPath.row]    
+    cell
+  end
 
 	def tableView(tableView, didSelectRowAtIndexPath:indexPath)
 		tableView.deselectRowAtIndexPath(indexPath, animated:true)
