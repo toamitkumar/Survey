@@ -1,5 +1,5 @@
 class Survey
-	attr_accessor :answers, :questions
+	attr_accessor :answers, :questions, :survey_data
 
 
 	def self.instance(_data={})
@@ -8,18 +8,17 @@ class Survey
 
 	private
 	def initialize(answers={})
-		@questions = load_questions
-		NSLog("===================")
-		puts @questions.inspect
+		@survey_data = load_survey_data
+		@questions = @survey_data["questions"]
 		@answers = {}
 		@answers.merge!(answers)
 	end
 
-	def load_questions
-		questions = NSBundle.mainBundle.pathForResource('questions', ofType:'json')
+	def load_survey_data
+		survey_data = NSBundle.mainBundle.pathForResource('survey', ofType:'json')
 		errorPointer = Pointer.new(:object)
 
-    data = NSData.alloc.initWithContentsOfFile(questions, options:NSDataReadingUncached, error:errorPointer)
+    data = NSData.alloc.initWithContentsOfFile(survey_data, options:NSDataReadingUncached, error:errorPointer)
 
     unless data
       printError errorPointer[0]
